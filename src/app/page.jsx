@@ -22,7 +22,7 @@ export default function Home() {
               Projects
             </Link>
           </div>
-          <figure className="flex justify-center mt-10 h-2/3 lg:h-full lg:mt-0 lg:justify-start lg:ml-28">
+          <figure className="flex justify-center mt-10 lg:h-full lg:mt-0 lg:justify-start lg:ml-28">
             <Image src={Avatar} alt="" className="h-full w-fit drop-shadow-2xl"/>
           </figure>
         </section>
