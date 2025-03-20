@@ -1,4 +1,4 @@
-import DotsAnimation from "@/components/partials/DotsAnimation";
+import DotsAnimation from "@/components/partials/layout/DotsAnimation";
 import "./globals.css";
 
 export const metadata = {
