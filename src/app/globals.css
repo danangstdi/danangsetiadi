@@ -2,32 +2,158 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  @font-face {
+    font-family: Poppins;
+    src:url('../../public/fonts/Poppins-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: PoppinsBold;
+    src:url('../../public/fonts/Poppins-Bold.ttf');
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  @font-face {
+    font-family: PoppinsExtraBold;
+    src:url('../../public/fonts/Poppins-ExtraBold.ttf');
+  }
+
+  @font-face {
+    font-family: PoppinsBlack;
+    src:url('../../public/fonts/Poppins-Black.ttf');
+  }
+
+  .poppins {
+    font-family: Poppins;
+  }
+
+  .poppins-bold {
+    font-family: PoppinsBold;
+  }
+
+  .poppins-extrabold {
+    font-family: PoppinsExtraBold;
+  }
+
+  .poppins-black {
+    font-family: PoppinsBlack;
+  }
+
+  *::-webkit-scrollbar {
+    width: .25rem;
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(44, 44, 44, 0.282);
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(44, 44, 44, 0.91);
+    cursor: grab;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .nav-list {
+    animation: navAnimation .1s ease-in-out;
+  }
+
+  @keyframes navAnimation {
+    0% {
+      opacity: 0%;
+    },
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  .nav-list-item-1 {
+    animation: navItemAnimation .15s ease-in;
+  }
+
+  .nav-list-item-2 {
+    animation: navItemAnimation .3s ease-in;
+  }
+
+  .nav-list-item-3 {
+    animation: navItemAnimation .45s ease-in;
+  }
+
+  .nav-list-item-4 {
+    animation: navItemAnimation .5s ease-in;
+  }
+
+  .nav-list-item-5 {
+    animation: navItemAnimation .65s ease-in;
+  }
+
+  @keyframes navItemAnimation {
+    0% {
+      opacity: 0;
+      margin-top: -2rem;
+    },
+    100% {
+      opacity: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .dots-left {
+    background: linear-gradient(90deg, rgb(213, 10, 186) 5%, rgb(160, 35, 238) 25%, rgba(160, 35, 238, 0.684) 55%, rgba(160, 35, 238, 0.432) 65%, rgba(147, 35, 238, 0.19) 80%, rgba(140, 35, 238, 0) 95%);
+    opacity: 40%;
+    border-radius: 50rem;
+    animation: dotsLeftAnim 9s infinite;
+    animation-delay: 0s;
+  }
+
+  @keyframes dotsLeftAnim {
+    0% {
+      transform: translateX(100%);
+    } 
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .dots-right {
+    background: linear-gradient(90deg, rgba(140, 35, 238, 0) 5%,rgba(147, 35, 238, 0.19) 25%, rgba(160, 35, 238, 0.432) 55%, rgba(160, 35, 238, 0.684) 65%, rgb(160, 35, 238) 80%, rgb(213, 10, 186) 95%);
+    opacity: 0;
+    border-radius: 50rem;
+    animation: dotsRightAnim 9s infinite;
+    animation-delay: 5s;
+    margin-top: 15rem;
+  }
+
+  @keyframes dotsRightAnim {
+    0% {
+      opacity: 40%;
+      transform: translateX(-100%);
+    } 
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  #hero p {
+    line-height: 2rem !important;
+  }
+
+  #hero h1 span {
+    color: transparent;
+    -webkit-text-stroke: 1.5px black;
+    text-shadow:
+      -1px -1px 0 black,
+      1px -1px 0 black
+      -1px 1px 0 black
+      1px 1px 0 black;
+  }
+
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  
 }
