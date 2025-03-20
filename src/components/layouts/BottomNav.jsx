@@ -15,7 +15,7 @@ export default function BottomNav() {
       <ul className="flex items-center justify-between h-full">
         {menuLists.map((menu) => (
           <li key={menu.url} className="w-full">
-            <Link href={menu.url} className="text-gray-700 flex flex-col justify-center items-center gap-1 hover:text-indigo-600">
+            <Link href={menu.url} className="text-gray-700 flex flex-col justify-center items-center gap-1 hover:text-emerald-500">
               {menu.icon}
               <p className="text-[.65rem]">{menu.label}</p>
             </Link>

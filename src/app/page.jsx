@@ -10,7 +10,7 @@ export default function Home() {
       <Header/>
       <main className="">
         <Hero/>
-        <section id="current-project" className="mt-32">
+        <section id="current-project" className="mt-14 lg:mt-32">
           <div className="text-center">
             <h1 className="text-3xl poppins-bold text-gray-800">Our Services</h1>
             <p className="line-height-2 text-sm text-gray-600 lg:text-base">Our <strong>best services</strong> for your finest needs.</p>

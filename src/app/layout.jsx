@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         {children}
         <div className="max-w-full overflow-hidden">
           {blurElements.map((element) => (
-            <span key={element} className={`${element} absolute -z-50 blur-3xl opacity-40 bg-gradient-to-tr from-pink-300 to-indigo-500 rounded-full lg:block`}></span>
+            <span key={element} className={`${element} absolute -z-50 blur-3xl opacity-40 bg-gradient-to-tr from-pink-300 to-emerald-500 rounded-full lg:block`}></span>
           ))}
         </div>
         <DotsAnimation/>

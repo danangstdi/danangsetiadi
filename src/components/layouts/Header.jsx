@@ -40,30 +40,30 @@ export default function Header() {
         <Link href=''>
           <Image src={Logo} loading='lazy' quality={50} alt='' className='h-9 w-9'/>
         </Link>
-        <button type='button' onClick={() => setNavOpen(!navOpen)} className='flex items-center gap-2 ml-5 bg-indigo-50 text-indigo-600 bg-opacity-70 text-xs px-3 py-1 rounded-full group hover:bg-indigo-100 lg:px-5'>
-            <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none" stroke="none"/><rect height="6" rx="1" width="6" x="4" y="4"/><rect height="6" rx="1" width="6" x="14" y="4"/><rect height="6" rx="1" width="6" x="4" y="14"/><rect height="6" rx="1" width="6" x="14" y="14"/></svg>
+        <button type='button' onClick={() => setNavOpen(!navOpen)} className='flex items-center gap-2 ml-5 bg-indigo-50 text-emerald-500 bg-opacity-70 text-xs px-3 py-1 rounded-full group hover:bg-indigo-100 lg:px-5'>
+            <svg fill="none" height="16" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none" stroke="none"/><rect height="6" rx="1" width="6" x="4" y="4"/><rect height="6" rx="1" width="6" x="14" y="4"/><rect height="6" rx="1" width="6" x="4" y="14"/><rect height="6" rx="1" width="6" x="14" y="14"/></svg>
             Quick Center
             <ChevronRight size={10} className="group-hover:ml-2 group-hover:duration-300"/>
         </button>
         <div className="ml-auto flex items-center gap-8">
           <ul className='hidden md:flex md:items-center md:gap-10 md:text-xs'>
             <li>
-              <Link href='/' className='hover:text-indigo-600'>
+              <Link href='/' className='hover:text-emerald-500'>
                 Home
               </Link>
             </li>
             <li>
-              <Link href='' className='hover:text-indigo-600'>
+              <Link href='' className='hover:text-emerald-500'>
                 Project
               </Link>
             </li>
             <li>
-              <Link href='/blog' className='hover:text-indigo-600'>
+              <Link href='/blog' className='hover:text-emerald-500'>
                 Blog
               </Link>
             </li>
             <li>
-              <Link href='' className='hover:text-indigo-600'>
+              <Link href='' className='hover:text-emerald-500'>
                 Forum
               </Link>
             </li>
@@ -98,11 +98,11 @@ export default function Header() {
           <section className='mt-10'>
             <h5 className='font-semibold nav-list-item-2'>Action</h5>
             <div className='grid grid-cols-2 gap-3 mt-4 nav-list-item-3 md:grid-cols-4 lg:grid-cols-6'>
-              <button className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-indigo-700 hover:duration-200 hover:text-indigo-700'>
+              <button className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
                 <Sun size={20}/>
                 <p className='text-sm'>Dark Mode : Off</p>
               </button>
-              <button className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-indigo-700 hover:duration-200 hover:text-indigo-700'>
+              <button className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
                 <FilePdfFill size={20}/>
                 <p className='text-sm'>Download CV</p>
               </button>
@@ -112,7 +112,7 @@ export default function Header() {
           <section className='mt-10'>
             <h5 className='font-semibold nav-list-item-4'>Socials</h5>
             <div className='grid grid-cols-2 gap-3 mt-4 nav-list-item-5 md:grid-cols-4 lg:grid-cols-6'>
-              <Link href='' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-indigo-700 hover:duration-200 hover:text-indigo-700'>
+              <Link href='' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
                 <Github size={20}/>
                 <p className='text-sm'>Github</p>
               </Link>
