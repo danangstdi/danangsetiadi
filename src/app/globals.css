@@ -138,7 +138,7 @@
     }
   }
 
-  #hero h1 span {
+  .h1-outline {
     color: transparent;
     -webkit-text-stroke: 1.5px black;
     text-shadow:
