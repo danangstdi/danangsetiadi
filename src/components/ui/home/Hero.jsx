@@ -5,7 +5,7 @@ import Avatar from '@/../public/img/avatar.webp'
 
 export default function Hero() {
   return (
-    <section id="hero" className="mt-24 grid overflow-hidden max-h-[48rem] lg:grid-cols-2 lg:max-h-[35rem]">
+    <section id="hero" className="mt-24 grid overflow-hidden max-h-[48rem] lg:grid-cols-2 lg:max-h-[28rem]">
        <div className="flex flex-col items-start gap-8 mt-10 mx-4 lg:mt-32 lg:ml-48 lg:mr-0">
          <small className="font-semibold lg:text-xl">Hello I&apos;m</small>
          <h1 className="text-4xl -my-6 poppins-bold text-emerald-400 lg:text-6xl lg:my-0">
