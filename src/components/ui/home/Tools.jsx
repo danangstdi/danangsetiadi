@@ -12,7 +12,7 @@ import vue from '@/../public/img/techstack/vue.png'
 
 export default function Tools() {
   return (
-    <section id="tools" className="lg:mt-36">
+    <section id="tools" className="">
       <marquee behavior="" direction="" className="p-3 bg-gray-100 lg:p-4">
         <div className="flex items-center gap-8 md:gap-12 lg:gap-20">
           <Image src={reactjs} alt="" className="h-8 lg:h-10 w-fit" />

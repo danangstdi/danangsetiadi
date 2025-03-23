@@ -3,6 +3,7 @@ import BottomNav from "@/components/layouts/BottomNav";
 import Hero from "@/components/ui/home/Hero";
 import Services from "@/components/ui/home/Services";
 import Tools from "@/components/ui/home/Tools";
+import WebDevelopment from "@/components/ui/home/WebDevelopment";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero/>
         <Tools/>
         <Services/>
+        <WebDevelopment/>
       </main>
       <BottomNav/>
     </>
