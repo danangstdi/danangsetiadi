@@ -11,7 +11,7 @@ export default function Hero() {
     <section id="hero" className="mt-24 grid overflow-hidden max-h-[46rem] lg:grid-cols-2 lg:max-h-[35rem]">
        <div className="flex flex-col items-start gap-8 mt-10 mx-4 lg:mt-32 lg:ml-48 lg:mr-0">
          <small className="font-semibold lg:text-xl">Hello I&apos;m</small>
-         <div className="flex gap-2">
+         <div className="flex gap-1">
           <h1 className="text-4xl -my-6 poppins-bold text-emerald-400 lg:text-6xl lg:my-0">
             <Typewriter 
               options={{
