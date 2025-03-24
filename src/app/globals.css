@@ -167,19 +167,6 @@
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
   }
 
-  .techstack-animate {
-    animation: techStackAnimate 3s infinite alternate;
-  }
-
-  @keyframes techStackAnimate {
-    0% {
-      transform: translateX(0);
-    },
-    100% {
-      transform: translateX(100%);
-    }
-  }
-
 }
 
 @layer utilities {
