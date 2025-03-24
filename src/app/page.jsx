@@ -4,6 +4,7 @@ import Hero from "@/components/ui/home/Hero";
 import Services from "@/components/ui/home/Services";
 import Tools from "@/components/ui/home/Tools";
 import WebDevelopment from "@/components/ui/home/WebDevelopment";
+import Footer from "@/components/layouts/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <WebDevelopment/>
       </main>
       <BottomNav/>
+      <Footer/>
     </>
   );
 }
