@@ -13,7 +13,7 @@ import vue from '@/../public/img/techstack/vue.png'
 export default function Tools() {
   return (
     <section id="tools" className="">
-      <marquee behavior="" direction="" className="p-3 bg-gray-100 lg:p-4">
+      <marquee behavior="" direction="" className="p-3 bg-gray-100 lg:p-4 dark:bg-slate-600">
         <div className="flex items-center gap-8 md:gap-12 lg:gap-20">
           <Image src={reactjs} alt="" className="h-8 lg:h-10 w-fit" />
           <Image src={nextjs} alt="" className="h-4 lg:h-6 w-fit" />

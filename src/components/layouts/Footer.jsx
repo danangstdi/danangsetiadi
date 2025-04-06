@@ -24,7 +24,7 @@ export default function Footer() {
           <Linkedin size={18} className='fill-black'/>
         </a>
       </div>
-      <p className='text-sm text-gray-500 text-center font-semibold py-4 md:text-sm'>© {currentYear} Danang. All rights reserved.</p>
+      <p className='text-sm text-gray-500 text-center font-semibold py-4 md:text-sm dark:text-slate-300'>© {currentYear} Danang. All rights reserved.</p>
     </footer>
   )
 }

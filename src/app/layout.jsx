@@ -1,5 +1,6 @@
 import DotsAnimation from "@/components/partials/layout/DotsAnimation";
 import "./globals.css";
+import { headers } from "next/headers";
 
 export const metadata = {
   title: "Danang Setiadi",
@@ -7,6 +8,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const theme = headers().get('x-theme') || 'light'
+
   const blurElements = [
     'h-40 w-72 right-0 top-10 md:top-20 md:right-32 md:h-72 md:w-96',
     '-right-0 top-96 h-28 w-96',
@@ -16,8 +19,9 @@ export default function RootLayout({ children }) {
   ]
 
   return (
-    <html lang="en">
-      <body className='poppins'>
+    <html lang="en" className='dark'>
+    {/* <html lang="en" className={theme}> */}
+      <body className='poppins dark:bg-gradient-to-br dark:from-slate-900 dark:to-emerald-900'>
         {children}
         <div className="max-w-full overflow-hidden">
           {blurElements.map((element) => (
