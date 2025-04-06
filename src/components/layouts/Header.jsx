@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import Logo from '@/../public/img/logo.svg'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, ChevronRight, FilePdfFill, Github, Search, Sun, X } from 'react-bootstrap-icons'
+import { ArrowRight, ChevronRight, FilePdfFill, Github, Google, Instagram, Linkedin, Search, Sun, Whatsapp, X } from 'react-bootstrap-icons'
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
@@ -102,10 +102,6 @@ export default function Header() {
                 <Sun size={20}/>
                 <p className='text-sm'>Dark Mode : Off</p>
               </button>
-              <button className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
-                <FilePdfFill size={20}/>
-                <p className='text-sm'>Download CV</p>
-              </button>
             </div>
           </section>
 
@@ -115,6 +111,22 @@ export default function Header() {
               <a href='https://github.com/danangstdi' target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
                 <Github size={20}/>
                 <p className='text-sm'>Github</p>
+              </a>
+              <a href="mailto:danangsetiadi2003@gmail.com" target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
+                <Google size={20}/>
+                <p className='text-sm'>Email</p>
+              </a>
+              <a href="https://www.linkedin.com/in/danang-setiadi-75a176262/" target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
+                <Linkedin size={20}/>
+                <p className='text-sm'>Linkedin</p>
+              </a>
+              <a href="https://www.instagram.com/danangstd_/" target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
+                <Instagram size={20}/>
+                <p className='text-sm'>Instagram</p>
+              </a>
+              <a href="https://wa.me/6285335837454" target='_blank' rel="noopener noreferrer" className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
+                <Whatsapp size={20}/>
+                <p className='text-sm'>Whatsapp</p>
               </a>
             </div>
           </section>
