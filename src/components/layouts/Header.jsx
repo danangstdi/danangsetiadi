@@ -75,11 +75,11 @@ export default function Header() {
           <button className='text-gray-700 hidden lg:block'>
             <Sun size={20}/>
           </button>
-          <Link href='/github' target='_blank' className='hidden py-3 px-5 text-white bg-gradient-to-r from-slate-600 to-slate-800 rounded-full text-xs group lg:flex lg:items-center lg:gap-2'>
+          <a href='https://github.com/danangstdi' target='_blank' className='hidden py-3 px-5 text-white bg-gradient-to-r from-slate-600 to-slate-800 rounded-full text-xs group lg:flex lg:items-center lg:gap-2'>
                 <Github size={16}/>
                 Github
                 <ArrowRight size={16} className='opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 group-hover:duration-300 group-hover:ease-in-out'/>
-          </Link>
+          </a>
         </div>
       </nav>
 
@@ -90,7 +90,7 @@ export default function Header() {
               <p className='text-3xl lg:text-5xl'>12.22</p>
               <p className='text-xs lg:text-lg'>Min, 16 Feb</p>
             </div>
-            <button type='button' onClick={() => setNavOpen(!navOpen)} className='nav-list-item-1 bg-slate-200 bg-opacity-50 backdrop-blur-sm h-fit p-1 ml-auto rounded-md hover:bg-slate-300'>
+            <button type='button' onClick={() => setNavOpen(!navOpen)} className='nav-list-item-1 bg-slate-100 bg-opacity-50 backdrop-blur-sm h-fit p-1 ml-auto rounded-md hover:bg-slate-300'>
               <X size={25} className='text-gray-700'/>
             </button>
           </section>
@@ -112,10 +112,10 @@ export default function Header() {
           <section className='mt-10'>
             <h5 className='font-semibold nav-list-item-4'>Socials</h5>
             <div className='grid grid-cols-2 gap-3 mt-4 nav-list-item-5 md:grid-cols-4 lg:grid-cols-6'>
-              <Link href='' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
+              <a href='https://github.com/danangstdi' target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500'>
                 <Github size={20}/>
                 <p className='text-sm'>Github</p>
-              </Link>
+              </a>
             </div>
           </section>
         </div>

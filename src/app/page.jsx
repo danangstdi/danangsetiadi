@@ -5,6 +5,7 @@ import Services from "@/components/ui/home/Services";
 import Tools from "@/components/ui/home/Tools";
 import WebDevelopment from "@/components/ui/home/WebDevelopment";
 import Footer from "@/components/layouts/Footer";
+import Certificate from "@/components/ui/home/Certificate";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Tools/>
         <Services/>
         <WebDevelopment/>
+        <Certificate/>
       </main>
       <BottomNav/>
       <Footer/>

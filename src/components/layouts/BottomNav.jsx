@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Book, Boxes, ChatSquareDots, House, Person } from "react-bootstrap-icons"
+import { Book, Boxes, ChatSquareDots, House, Image } from "react-bootstrap-icons"
 
 export default function BottomNav() {
   const menuLists = [
@@ -7,7 +7,7 @@ export default function BottomNav() {
     {url: '/blog', label: 'Blog', icon: <Book size={18}/>},
     {url: '/forum', label: 'Forum', icon: <ChatSquareDots size={18}/>},
     {url: '/project', label: 'Project', icon: <Boxes size={18}/>},
-    {url: '/profile/danangsetiadi', label: 'Profile', icon: <Person size={18}/>},
+    {url: '/gallery', label: 'Gallery', icon: <Image size={18}/>},
   ]
 
   return (
