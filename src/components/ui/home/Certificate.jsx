@@ -6,6 +6,7 @@ import Certif2 from '@/../public/img/certificate/2.png'
 import Certif3 from '@/../public/img/certificate/3.png'
 import Certif4 from '@/../public/img/certificate/4.png'
 import Certif5 from '@/../public/img/certificate/5.png'
+import Certif6 from '@/../public/img/certificate/6.png'
 import { X } from "react-bootstrap-icons";
 import { useState } from "react";
 
@@ -18,6 +19,7 @@ export default function Certificate() {
     Certif3,
     Certif4,
     Certif5,
+    Certif6,
   ]
 
   return (
@@ -29,8 +31,8 @@ export default function Certificate() {
         </p>
         <div className="bg-gray-100 p-4 grid gap-2 items-center my-10 lg:grid-cols-2 lg:mx-24 xl:mx-72 dark:bg-transparent">
           {ListCertif.map((certificate, index) => (
-            <figure key={index} onClick={() => setPopupOpen(certificate)} className="cursor-pointer">
-              <Image src={certificate} alt="" loading="lazy"/>
+            <figure key={index} onClick={() => setPopupOpen(certificate)} className="cursor-pointer h-full">
+              <Image src={certificate} alt="" loading="lazy" className="h-full w-full"/>
             </figure>
           ))}
         </div>
