@@ -4,20 +4,29 @@ import { useEffect, useState } from 'react'
 import Logo from '@/../public/img/logo.svg'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, ChevronRight, Github, Google, Instagram, Linkedin, Search, Sun, Whatsapp, X } from 'react-bootstrap-icons'
+import { ArrowRight, ChevronRight, Github, Google, Instagram, Linkedin, Moon, Search, Sun, Whatsapp, X } from 'react-bootstrap-icons'
 import Swal from 'sweetalert2'
+import { useTheme } from 'next-themes'
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mount, setMount] = useState(false);
+  const {systemTheme, theme, setTheme} = useTheme();
+  
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
-    const handleToast = () => {
+  useEffect(() => {
+    setMount(true);
+  }, []);
+
+  const handleToast = () => {
       return Swal.fire({
         title: "",
-        text: "Mohon maaf, Web masih dalam tahap pengembangan",
+        text: "Mohon maaf, fitr ini masih dalam tahap pengembangan",
         icon: "warning"
       });
-    }
+  }
 
   useEffect(() => {
     if (navOpen) {
@@ -81,8 +90,8 @@ export default function Header() {
           <button type='button' onClick={handleToast} className='text-gray-700 dark:text-slate-100'>
             <Search size={18}/>
           </button>
-          <button type='button' onClick={handleToast} className='text-gray-700 hidden lg:block dark:text-slate-100'>
-            <Sun size={20}/>
+          <button type='button' onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")} className='text-gray-700 hidden lg:block dark:text-slate-100'>
+            {currentTheme == 'dark' ? <Moon size={20}/> : <Sun size={20}/>}
           </button>
           <a href='https://github.com/danangstdi' target='_blank' className='hidden py-3 px-5 text-white bg-gradient-to-r from-slate-600 to-slate-800 rounded-full text-xs group lg:flex lg:items-center lg:gap-2 dark:text-slate-100'>
                 <Github size={16}/>
@@ -107,9 +116,13 @@ export default function Header() {
           <section className='mt-10'>
             <h5 className='font-semibold nav-list-item-2 dark:text-slate-100'>Action</h5>
             <div className='grid grid-cols-2 gap-3 mt-4 nav-list-item-3 md:grid-cols-4 lg:grid-cols-6'>
-              <button type='button'  onClick={handleToast} className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60'>
-                <Sun size={20}/>
-                <p className='text-sm'>Dark Mode : Off</p>
+              <button type='button'  onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")} className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-emerald-500 hover:duration-200 hover:text-emerald-500 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60'>
+                {currentTheme == 'dark' 
+                ? <><Moon size={20}/>
+                  <p className='text-sm'>Dark Mode : On</p></>
+                : <><Sun size={20}/>
+                  <p className='text-sm'>Dark Mode : Off</p></>
+                }
               </button>
             </div>
           </section>

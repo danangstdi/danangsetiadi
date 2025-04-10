@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Book, Boxes, House, Image, Link45deg, Moon } from "react-bootstrap-icons"
+import { Book, Boxes, House, Link45deg, Moon } from "react-bootstrap-icons"
 import Swal from "sweetalert2"
 
 export default function BottomNav() {
