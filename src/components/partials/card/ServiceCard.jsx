@@ -1,7 +1,7 @@
 export default function ServiceCard(props) {
   return (
     <div className="card h-80 overflow-hidden rounded-3xl cursor-default">
-       <div className={`card2 bg-gradient-to-br ${props.main ? 'from-teal-400 to-teal-600' : 'from-zinc-700 to-zinc-900'} h-full p-3 flex flex-col justify-center items-center gap-3 hover:rounded-3xl`}>
+       <div className={`card2 bg-gradient-to-br ${props.main ? 'from-cyan-400 to-cyan-600' : 'from-zinc-700 to-zinc-900'} h-full p-3 flex flex-col justify-center items-center gap-3 hover:rounded-3xl`}>
          <div className="bg-white rounded-full p-3 w-fit text-zinc-900">
            {props.icon}
          </div>

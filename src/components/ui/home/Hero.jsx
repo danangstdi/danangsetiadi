@@ -21,7 +21,7 @@ export default function Hero() {
        <div className="flex flex-col items-start gap-8 mt-10 mx-4 lg:mt-32 lg:ml-48 lg:mr-0">
          <small className="font-semibold lg:text-xl dark:text-slate-100">Hello I&apos;m</small>
          <div className="flex gap-1">
-          <h1 className="text-4xl -my-6 poppins-bold text-teal-400 lg:text-7xl lg:my-0">
+          <h1 className="text-4xl -my-6 poppins-bold text-cyan-400 lg:text-7xl lg:my-0">
             <Typewriter 
               options={{
                 loop: true

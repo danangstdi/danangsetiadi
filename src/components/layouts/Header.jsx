@@ -58,7 +58,7 @@ export default function Header() {
         <Link href=''>
           <Image src={Logo} loading='lazy' quality={50} alt='' className='h-9 w-9'/>
         </Link>
-        <button type='button' onClick={() => setNavOpen(!navOpen)} className='flex items-center gap-2 ml-5 bg-indigo-50 text-teal-400 bg-opacity-70 text-xs px-3 py-1 rounded-full group hover:bg-indigo-100 lg:px-5 dark:bg-slate-800 dark:bg-opacity-70'>
+        <button type='button' onClick={() => setNavOpen(!navOpen)} className='flex items-center gap-2 ml-5 bg-indigo-50 text-cyan-400 bg-opacity-70 text-xs px-3 py-1 rounded-full group hover:bg-indigo-100 lg:px-5 dark:bg-slate-800 dark:bg-opacity-70'>
             <svg fill="none" height="16" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none" stroke="none"/><rect height="6" rx="1" width="6" x="4" y="4"/><rect height="6" rx="1" width="6" x="14" y="4"/><rect height="6" rx="1" width="6" x="4" y="14"/><rect height="6" rx="1" width="6" x="14" y="14"/></svg>
             Quick Center
             <ChevronRight size={10} className="group-hover:ml-2 group-hover:duration-300"/>
@@ -66,22 +66,22 @@ export default function Header() {
         <div className="ml-auto flex items-center gap-8">
           <ul className='hidden md:flex md:items-center md:gap-10 md:text-xs dark:text-slate-100'>
             <li>
-              <Link href='/' className='hover:text-teal-400'>
+              <Link href='/' className='hover:text-cyan-400'>
                 Home
               </Link>
             </li>
             <li>
-              <Link href='' className='hover:text-teal-400'>
+              <Link href='' className='hover:text-cyan-400'>
                 Project
               </Link>
             </li>
             <li>
-              <Link href='/blog' className='hover:text-teal-400'>
+              <Link href='/blog' className='hover:text-cyan-400'>
                 Blog
               </Link>
             </li>
             <li>
-              <Link href='' className='hover:text-teal-400'>
+              <Link href='' className='hover:text-cyan-400'>
                 Forum
               </Link>
             </li>
@@ -116,7 +116,7 @@ export default function Header() {
           <section className='mt-10'>
             <h5 className='font-semibold nav-list-item-2 dark:text-slate-100'>Action</h5>
             <div className='grid grid-cols-2 gap-3 mt-4 nav-list-item-3 md:grid-cols-4 lg:grid-cols-6'>
-              <button type='button'  onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")} className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-teal-400 hover:duration-200 hover:text-teal-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60'>
+              <button type='button'  onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")} className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-cyan-400 hover:duration-200 hover:text-cyan-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60 hover:dark:text-cyan-400'>
                 {currentTheme == 'dark' 
                 ? <><Moon size={20}/>
                   <p className='text-sm'>Dark Mode : On</p></>
@@ -130,23 +130,23 @@ export default function Header() {
           <section className='mt-10'>
             <h5 className='font-semibold nav-list-item-4 dark:text-slate-100'>Socials</h5>
             <div className='grid grid-cols-2 gap-3 mt-4 nav-list-item-5 md:grid-cols-4 lg:grid-cols-6'>
-              <a href='https://github.com/danangstdi' target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-teal-400 hover:duration-200 hover:text-teal-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60'>
+              <a href='https://github.com/danangstdi' target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-cyan-400 hover:duration-200 hover:text-cyan-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60 hover:dark:text-cyan-400'>
                 <Github size={20}/>
                 <p className='text-sm'>Github</p>
               </a>
-              <a href="mailto:danangsetiadi2003@gmail.com" target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-teal-400 hover:duration-200 hover:text-teal-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60'>
+              <a href="mailto:danangsetiadi2003@gmail.com" target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-cyan-400 hover:duration-200 hover:text-cyan-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60 hover:dark:text-cyan-400'>
                 <Google size={20}/>
                 <p className='text-sm'>Email</p>
               </a>
-              <a href="https://www.linkedin.com/in/danang-setiadi-75a176262/" target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-teal-400 hover:duration-200 hover:text-teal-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60'>
+              <a href="https://www.linkedin.com/in/danang-setiadi-75a176262/" target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-cyan-400 hover:duration-200 hover:text-cyan-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60 hover:dark:text-cyan-400'>
                 <Linkedin size={20}/>
                 <p className='text-sm'>Linkedin</p>
               </a>
-              <a href="https://www.instagram.com/danangstd_/" target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-teal-400 hover:duration-200 hover:text-teal-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60'>
+              <a href="https://www.instagram.com/danangstd_/" target='_blank' className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-cyan-400 hover:duration-200 hover:text-cyan-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60 hover:dark:text-cyan-400'>
                 <Instagram size={20}/>
                 <p className='text-sm'>Instagram</p>
               </a>
-              <a href="https://wa.me/6285335837454" target='_blank' rel="noopener noreferrer" className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-teal-400 hover:duration-200 hover:text-teal-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60'>
+              <a href="https://wa.me/6285335837454" target='_blank' rel="noopener noreferrer" className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-cyan-400 hover:duration-200 hover:text-cyan-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60 hover:dark:text-cyan-400'>
                 <Whatsapp size={20}/>
                 <p className='text-sm'>Whatsapp</p>
               </a>
