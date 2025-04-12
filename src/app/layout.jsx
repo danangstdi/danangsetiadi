@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     // <html lang="en" className={theme}>
     <html lang="en">
-      <body className='poppins dark:bg-gradient-to-br dark:from-slate-900 dark:to-emerald-900'>
+      <body className='poppins dark:bg-gradient-to-tr dark:from-slate-900 dark:bg-pink-custom'>
         <ThemeProvider 
           attribute="class" 
           defaultTheme="system" 

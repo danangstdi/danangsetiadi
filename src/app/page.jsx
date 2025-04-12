@@ -16,8 +16,10 @@ export default function Home() {
       <Header/>
       <main className="pb-20">
         <Hero/>
+        {/* <div className='bg-gray-100 dark:bg-gradient-to-tr from-teal-700 bg-pink-custom'> */}
         <Tools/>
         <Services/>
+        {/* </div> */}
         <WebDevelopment/>
         <Certificate/>
       </main>

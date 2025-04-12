@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --pink-color: rgb(49, 0, 40);
+  }
+
   @font-face {
     font-family: Poppins;
     src:url('../../public/fonts/Poppins-Regular.ttf');
@@ -65,7 +69,7 @@
   @keyframes navAnimation {
     0% {
       opacity: 0%;
-    },
+    }
     100% {
       opacity: 100%;
     }
@@ -94,11 +98,14 @@
   @keyframes navItemAnimation {
     0% {
       opacity: 0;
-      margin-top: -2rem;
-    },
+      transform: translateY(-100%);
+    }
+    80% {
+      transform: translateY(5%);
+    }
     100% {
       opacity: 100%;
-      margin-top: 0;
+      transform: translateY(0);
     }
   }
 
@@ -174,7 +181,7 @@
   }
   
   .card:hover {
-    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    box-shadow: 0px 0px 30px 1px teal;
   }
 
   /* From Uiverse.io by G4b413l */ 
@@ -209,14 +216,14 @@
     content: "";
     left: 0;
     justify-content: flex-end;
-    background-color: rgb(10, 199, 104);
+    background-color: rgb(13, 154, 154);
   }
 
   .social-card::after {
     content: "";
     right: 0;
     justify-content: flex-start;
-    background-color: rgb(10, 173, 92);
+    background-color: rgb(9, 142, 142);
   }
 
   .social-card:hover {
@@ -300,5 +307,9 @@
 @layer utilities {
   .line-height-2  {
     line-height: 2rem !important;
+  }
+
+  .bg-pink-custom {
+    background-color: var(--pink-color);
   }
 }
