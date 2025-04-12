@@ -100,10 +100,8 @@
       opacity: 0;
       transform: translateY(-100%);
     }
-    50% {
-      opacity: 0;
-    }
     80% {
+      opacity: 0;
       transform: translateY(5%);
     }
     100% {
