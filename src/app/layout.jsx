@@ -1,4 +1,4 @@
-import DotsAnimation from "@/components/partials/layout/DotsAnimation";
+import DotsAnimation from "@/components/layouts/DotsAnimation";
 import "./globals.css";
 import ThemeProvider from "@/components/utils/ThemeProvider";
 
@@ -18,13 +18,12 @@ export default function RootLayout({ children }) {
   ]
 
   return (
-    // <html lang="en" className={theme}>
     <html lang="en">
       <body className='poppins dark:bg-gradient-to-tr dark:from-slate-900 dark:bg-pink-custom'>
         <ThemeProvider 
           attribute="class" 
-          defaultTheme="system" 
-          enableSystem>
+          defaultTheme="dark" 
+          enableSystem={false}>
             {children}
             <div className="max-w-full overflow-hidden">
               {blurElements.map((element) => (
