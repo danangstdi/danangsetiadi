@@ -19,7 +19,7 @@ export default function ThemeTogglerBottomNav() {
   }
 
   return (
-    <button onClick={handleToggle} className="w-full text-gray-700 flex flex-col justify-center items-center gap-1 hover:text-emerald-500 dark:text-slate-100">
+    <button onClick={handleToggle} className="w-full text-gray-700 flex flex-col justify-center items-center gap-1 dark:text-slate-100">
       {theme == 'dark' ? <Moon size={18}/> : <Sun size={18}/>}
       <p className="text-[.65rem]">Theme</p>
     </button>
