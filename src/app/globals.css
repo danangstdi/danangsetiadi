@@ -148,6 +148,22 @@
     }
   }
 
+  .service-icon-anim {
+    animation: serviceIconAnim 3s infinite ease-in-out;
+  }
+
+  @keyframes serviceIconAnim {
+    0% {
+      transform: rotateZ(0) scale(100%) translateX(0);
+    } 
+    50% {
+      transform: rotateZ(15deg) scale(107%) translateX(-7%);
+    }
+    100% {
+      transform:rotateZ(0) scale(100%) translateX(0);
+    }
+  }
+
   .h1-outline {
     color: transparent;
     -webkit-text-stroke: 1.5px black;

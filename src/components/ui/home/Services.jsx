@@ -3,7 +3,7 @@ import { CodeSlash, VectorPen, LayoutTextWindowReverse } from "react-bootstrap-i
 
 export default function Services() {
   return (
-    <section id="our-services" className="pt-24 pb-14 lg:pt-32 bg-gray-100 dark:bg-slate-900">
+    <section id="our-services" className="pt-24 pb-14 lg:pt-32 bg-gray-100 border-b dark:bg-slate-900 dark:border-slate-800">
       <div className="text-center">
         <h1 className="text-3xl poppins-bold text-gray-800 dark:text-slate-100">Our Services</h1>
         <p className="line-height-2 text-sm text-gray-600 lg:text-base dark:text-slate-300">Our <strong>best services</strong> for your finest needs.</p>

@@ -41,9 +41,9 @@ export default function Hero() {
          <p className="line-height-2 text-sm text-gray-600 lg:text-base dark:text-slate-300">
             We offer specialized <strong>website development</strong> services for web developers. With various categories, we also provide complete <strong>resources to develop your web projects.</strong>
         </p>
-         <Link href='' onClick={handleToast} className="text-xs flex items-center gap-2 py-3 px-12 bg-gradient-to-r from-cyan-400 to-pink-500 rounded-full text-white shadow-lg group lg:text-sm">
+         <Link href='' onClick={handleToast} className="text-xs flex items-center gap-2 py-3 px-8 bg-gradient-to-r from-cyan-400 to-pink-500 rounded-full text-white shadow-lg group lg:text-sm">
            <RocketTakeoff size={18} className="group-hover:rotate-45 group-hover:mr-3 group-hover:duration-300 group-hover:ease-in-out"/>
-           Projects
+           Contact Me
          </Link>
        </div>
       <figure className="flex justify-center mt-10 h-3/4 lg:h-[90%] lg:mt-0 lg:justify-start lg:ml-28">
