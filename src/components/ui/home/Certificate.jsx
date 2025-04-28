@@ -29,7 +29,7 @@ export default function Certificate() {
         <p className="line-height-2 px-3 text-xs text-gray-600 mt-2 lg:px-40 lg:text-base dark:text-slate-300">
           Tap to zoom Certificate
         </p>
-        <div className="bg-gray-100 p-4 grid gap-2 items-center my-10 lg:grid-cols-2 lg:mx-24 xl:mx-72 dark:bg-transparent">
+        <div className="bg-gray-100 p-4 grid gap-2 items-center my-10 md:grid-cols-2 lg:mx-24 xl:mx-72 dark:bg-transparent">
           {ListCertif.map((certificate, index) => (
             <figure key={index} onClick={() => setPopupOpen(certificate)} className="cursor-pointer h-full">
               <Image src={certificate} alt="" loading="lazy" className="h-full w-full"/>

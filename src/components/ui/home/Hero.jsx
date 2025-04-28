@@ -17,8 +17,8 @@ export default function Hero() {
     }
 
   return (
-    <section id="hero" className="mt-24 grid overflow-hidden max-h-[46rem] lg:grid-cols-2 lg:max-h-[43rem]">
-       <div className="flex flex-col items-start gap-8 mt-10 mx-4 lg:mt-32 lg:ml-48 lg:mr-0">
+    <section id="hero" className="mt-24 grid lg:grid-cols-2">
+       <div className="flex flex-col items-start gap-8 mt-10 mx-4 lg:mt-32 lg:ml-20 xl:ml-48 lg:mr-0">
          <small className="font-semibold lg:text-xl dark:text-slate-100">Hello I&apos;m</small>
          <div className="flex gap-1">
           <h1 className="text-4xl -my-6 poppins-bold text-cyan-400 lg:text-7xl lg:my-0">
@@ -46,7 +46,7 @@ export default function Hero() {
            Contact Me
          </Link>
        </div>
-      <figure className="flex justify-center mt-10 h-3/4 lg:h-[90%] lg:mt-0 lg:justify-start lg:ml-28">
+      <figure className="flex justify-center mt-10 h-3/4 sm:h-[85%] lg:h-[145%] lg:mt-0 lg:justify-start lg:ml-28">
         <Image src={Avatar} alt="" className="h-full w-fit z-10 drop-shadow-2xl"/>
       </figure>
     </section>
