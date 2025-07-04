@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       <body className='poppins dark:bg-gradient-to-tr dark:from-slate-900 dark:bg-pink-custom'>
         <ThemeProvider 
           attribute="class" 
-          defaultTheme="dark" 
+          defaultTheme="light" 
           enableSystem={false}>
             {children}
             <div className="max-w-full overflow-hidden">
