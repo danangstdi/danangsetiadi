@@ -1,14 +1,14 @@
 import Image from "next/image";
-import figma from '@/../public/img/techstack/figma.png'
-import flutter from '@/../public/img/techstack/flutter.png'
-import laravel from '@/../public/img/techstack/laravel.png'
-import mysql from '@/../public/img/techstack/mysql.png'
-import nextjs from '@/../public/img/techstack/nextjs.png'
-import php from '@/../public/img/techstack/php.png'
-import postgresql from '@/../public/img/techstack/postgresql.png'
-import prisma from '@/../public/img/techstack/prisma.png'
-import reactjs from '@/../public/img/techstack/reactjs.png'
-import vue from '@/../public/img/techstack/vue.png'
+import figma from '@/../../public/img/techstack/figma.png'
+import flutter from '@/../../public/img/techstack/flutter.png'
+import laravel from '@/../../public/img/techstack/laravel.png'
+import mysql from '@/../../public/img/techstack/mysql.png'
+import nextjs from '@/../../public/img/techstack/nextjs.png'
+import php from '@/../../public/img/techstack/php.png'
+import postgresql from '@/../../public/img/techstack/postgresql.png'
+import prisma from '@/../../public/img/techstack/prisma.png'
+import reactjs from '@/../../public/img/techstack/reactjs.png'
+import vue from '@/../../public/img/techstack/vue.png'
 
 export default function Tools() {
   return (

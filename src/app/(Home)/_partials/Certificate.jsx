@@ -1,12 +1,12 @@
 "use client"
 
 import Image from "next/image";
-import Certif1 from '@/../public/img/certificate/1.png'
-import Certif2 from '@/../public/img/certificate/2.png'
-import Certif3 from '@/../public/img/certificate/3.png'
-import Certif4 from '@/../public/img/certificate/4.png'
-import Certif5 from '@/../public/img/certificate/5.png'
-import Certif6 from '@/../public/img/certificate/6.png'
+import Certif1 from '@/../../public/img/certificate/1.png'
+import Certif2 from '@/../../public/img/certificate/2.png'
+import Certif3 from '@/../../public/img/certificate/3.png'
+import Certif4 from '@/../../public/img/certificate/4.png'
+import Certif5 from '@/../../public/img/certificate/5.png'
+import Certif6 from '@/../../public/img/certificate/6.png'
 import { X } from "react-bootstrap-icons";
 import { useState } from "react";
 

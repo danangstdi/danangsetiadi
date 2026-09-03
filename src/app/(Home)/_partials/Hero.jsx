@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { RocketTakeoff } from "react-bootstrap-icons"
-import Avatar from '@/../public/img/avatar.png'
+import Avatar from '@/../../public/img/avatar.png'
 import Typewriter from 'typewriter-effect'; 
 import Swal from "sweetalert2"
 

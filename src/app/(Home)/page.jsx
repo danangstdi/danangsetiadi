@@ -1,10 +1,11 @@
 import BottomNav from "@/components/layouts/BottomNav";
-import Hero from "@/components/ui/home/Hero";
-import Services from "@/components/ui/home/Services";
-import Tools from "@/components/ui/home/Tools";
-import WebDevelopment from "@/components/ui/home/WebDevelopment";
+import Hero from "./_partials/Hero";
+import Services from "./_partials/Services";
+import Tools from "./_partials/Tools";
+import WebDevelopment from "./_partials/WebDevelopment";
+import GameDevelopment from "./_partials/GameDevelopment";
 import Footer from "@/components/layouts/Footer";
-import Certificate from "@/components/ui/home/Certificate";
+import Certificate from "./_partials/Certificate";
 import Header from "@/components/layouts/Header";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <Tools/>
         <Services/>
         <WebDevelopment/>
+        <GameDevelopment/>
         <Certificate/>
       </main>
       <BottomNav/>
