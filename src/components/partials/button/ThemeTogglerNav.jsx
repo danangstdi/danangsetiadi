@@ -22,9 +22,9 @@ export default function ThemeTogglerNav() {
     <button type='button'  onClick={handleToggle} className='bg-slate-50 text-gray-700 bg-opacity-60 rounded-lg shadow-sm flex flex-col justify-between w-full h-32 p-5 hover:border hover:border-cyan-400 hover:duration-200 hover:text-cyan-400 dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-60 hover:dark:text-cyan-400'>
         {theme == 'dark' 
         ? <><Moon size={20}/>
-          <p className='text-sm'>Dark Mode : On</p></>
+          <p className='text-sm text-start'>Dark Mode : On</p></>
         : <><Sun size={20}/>
-          <p className='text-sm'>Dark Mode : Off</p></>
+          <p className='text-sm text-start'>Dark Mode : Off</p></>
       }
     </button>
   );

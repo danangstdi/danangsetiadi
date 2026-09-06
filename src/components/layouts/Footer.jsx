@@ -17,9 +17,6 @@ export default function Footer() {
         <a className="social-link" href="mailto:danangsetiadi2003@gmail.com" target='_blank'>
           <Google size={18} className='fill-black'/>
         </a>
-        <a className="social-link" href="https://wa.me/6285335837454" target='_blank' rel="noopener noreferrer">
-          <Whatsapp size={18} className='fill-black'/>
-        </a>
         <a className="social-link" href="https://www.linkedin.com/in/danang-setiadi-75a176262/" target='_blank'>
           <Linkedin size={18} className='fill-black'/>
         </a>
