@@ -6,6 +6,7 @@ import WebDevelopment from "./_partials/WebDevelopment";
 import GameDevelopment from "./_partials/GameDevelopment";
 import Footer from "@/components/layouts/Footer";
 import Certificate from "./_partials/Certificate";
+import Project from "./_partials/Project";
 import Header from "@/components/layouts/Header";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Services/>
         <WebDevelopment/>
         <GameDevelopment/>
+        <Project/>
         <Certificate/>
       </main>
       <BottomNav/>
