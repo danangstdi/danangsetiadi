@@ -53,6 +53,7 @@ export default function Project() {
         <div className="bg-transparent p-4 grid gap-3 items-center my-10 grid-cols-2 md:gap-6 lg:mx-24 xl:mx-72 xl:grid-cols-3">
           {Projects.map((item) => (
             <ProjectCard 
+                key={item.title}
                 title={item.title} 
                 type={item.type} 
                 year={item.year} 
