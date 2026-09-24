@@ -7,7 +7,11 @@ export default function WebDevelopment() {
       <div className="text-center">
         <h1 className="text-3xl poppins-bold text-gray-800 dark:text-slate-100">Sesuaikan Dengan Kebutuhan</h1>
         <p className="line-height-2 px-3 text-xs text-gray-600 mt-2 lg:px-40 lg:text-base dark:text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium dolore totam, corrupti non tempore, repudiandae tenetur at consequatur aperiam distinctio ducimus itaque, ratione magnam provident consequuntur vel iusto. Eos, commodi.</p>
-        <div className="bg-gray-100 p-4 grid grid-cols-2 items-center my-10 lg:mx-24 xl:mx-72 dark:bg-neutral-900">
+        <div className="relative bg-gray-100 p-4 grid grid-cols-2 items-center my-10 lg:mx-24 xl:mx-72 dark:bg-neutral-950">
+          <span className="absolute left-0 top-0 h-3 w-3 border-l-4 border-t-4 border-transparent dark:border-gray-500" />
+          <span className="absolute right-0 top-0 h-3 w-3 border-r-4 border-t-4 border-transparent dark:border-gray-500" />
+          <span className="absolute bottom-0 left-0 h-3 w-3 border-b-4 border-l-4 border-transparent dark:border-gray-500" />
+          <span className="absolute bottom-0 right-0 h-3 w-3 border-b-4 border-r-4 border-transparent dark:border-gray-500" />
           <figure>
             <Image src={project} alt="" loading="lazy"/>
           </figure>

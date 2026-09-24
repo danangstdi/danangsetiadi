@@ -8,6 +8,7 @@ import Footer from "@/components/layouts/Footer";
 import Certificate from "./_partials/Certificate";
 import Project from "./_partials/Project";
 import Header from "@/components/layouts/Header";
+import DinoGame from "@/components/DinoGame";
 
 export default function Home() {
   return (
@@ -17,8 +18,9 @@ export default function Home() {
         <Hero/>
         <Tools/>
         <Services/>
+        <DinoGame/>
         <WebDevelopment/>
-        <GameDevelopment/>
+        {/* <GameDevelopment/> */}
         <Project/>
         <Certificate/>
       </main>
