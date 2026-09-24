@@ -7,9 +7,12 @@ import sprite2x from "../resources/dino_game/images/default_200_percent/200-offl
 
 export default function DinoGame() {
   const [mode, setMode] = useState("auto");
+  const [soundOn, setSoundOn] = useState(false);
 
   const gameContainerRef = useRef(null);
   const runnerRef = useRef(null);
+  const soundOnRef = useRef(false);
+  const originalPlaySoundRef = useRef(null);
 
   const autoPlayFrameRef = useRef(null);
   const restartTimeoutRef = useRef(null);
@@ -314,6 +317,45 @@ export default function DinoGame() {
   };
 
   /*
+ * ============================================================
+ * SOUND TOGGLE
+ * ============================================================
+ */
+  const toggleSound = () => {
+    const runner = runnerRef.current;
+
+    if (!runner) return;
+
+    const nextSoundState = !soundOnRef.current;
+
+    soundOnRef.current = nextSoundState;
+    setSoundOn(nextSoundState);
+
+    /*
+    * Simpan fungsi playSound asli hanya sekali.
+    */
+    if (!originalPlaySoundRef.current && typeof runner.playSound === "function") {
+      originalPlaySoundRef.current = runner.playSound.bind(runner);
+    }
+
+    /*
+    * SFX ON
+    */
+    if (nextSoundState) {
+      if (originalPlaySoundRef.current) {
+        runner.playSound = originalPlaySoundRef.current;
+      }
+    }
+
+    /*
+    * SFX OFF
+    */
+    else {
+      runner.playSound = () => {};
+    }
+  };
+
+  /*
    * ============================================================
    * INITIALIZE GAME
    * ============================================================
@@ -420,8 +462,26 @@ export default function DinoGame() {
          */
 
         runnerRef.current = new Runner(
-          gameContainerRef.current
-        );
+        gameContainerRef.current
+      );
+
+      /*
+      * ==========================================================
+      * DEFAULT SFX OFF
+      * ==========================================================
+      *
+      * Simpan fungsi playSound asli, kemudian override
+      * dengan fungsi kosong agar game tidak mengeluarkan suara.
+      */
+
+      if (typeof runnerRef.current.playSound === "function") {
+        originalPlaySoundRef.current =
+          runnerRef.current.playSound.bind(runnerRef.current);
+
+        runnerRef.current.playSound = () => {};
+      }
+
+      soundOnRef.current = false;
 
         /*
          * ======================================================
@@ -546,35 +606,68 @@ export default function DinoGame() {
               </span>
             )}
           </div>
-
-          <div className="flex items-center gap-1 rounded-lg border border-gray-200 bg-gray-50 p-1 dark:border-slate-700 dark:bg-neutral-950">
-
+          <div className="flex items-center">
             <button
-              type="button"
-              onClick={() => changeMode("auto")}
-              className={`rounded-md px-3 py-1.5 text-xs font-medium transition ${
-                mode === "auto"
-                  ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
-                  : "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              }`}
-            >
-              Auto
-            </button>
+                type="button"
+                onClick={toggleSound}
+                aria-label={soundOn ? "Mute sound" : "Enable sound"}
+                className="rounded-md px-2 py-1.5 text-gray-500 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              >
+                {soundOn ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    className="bi bi-volume-up"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z" />
+                    <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z" />
+                    <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11" />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    className="bi bi-volume-mute"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06M6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0" />
+                  </svg>
+                )}
+              </button>
+            <div className="flex items-center gap-1 rounded-lg border border-gray-200 bg-gray-50 p-1 dark:border-slate-700 dark:bg-neutral-950">
+              <button
+                type="button"
+                onClick={() => changeMode("auto")}
+                className={`rounded-md px-3 py-1.5 text-xs font-medium transition ${
+                  mode === "auto"
+                    ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
+                    : "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                }`}
+              >
+                Auto
+              </button>
 
-            <button
-              type="button"
-              onClick={() => changeMode("manual")}
-              className={`rounded-md px-3 py-1.5 text-xs font-medium transition ${
-                mode === "manual"
-                  ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
-                  : "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-              }`}
-            >
-              Manual
-            </button>
+              <button
+                type="button"
+                onClick={() => changeMode("manual")}
+                className={`rounded-md px-3 py-1.5 text-xs font-medium transition ${
+                  mode === "manual"
+                    ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
+                    : "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                }`}
+              >
+                Manual
+              </button>
 
+            </div>
           </div>
-        </div>
+          </div>
+          
         </div>
 
         {/* Game */}
