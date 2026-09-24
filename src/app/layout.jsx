@@ -1,6 +1,7 @@
 import DotsAnimation from "@/components/layouts/DotsAnimation";
 import "./globals.css";
 import ThemeProvider from "@/components/utils/ThemeProvider";
+import CursorCoordinates from "@/components/layouts/CursorCoordinates";
 
 export const metadata = {
   title: "Danang Setiadi",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
               ))}
             </div>
             <DotsAnimation/>
+            <CursorCoordinates/>
         </ThemeProvider>
       </body>
     </html>
