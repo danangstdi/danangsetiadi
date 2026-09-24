@@ -20,7 +20,7 @@ export default function ThemeTogglerNav() {
 
   return (
     <button type='button' onClick={handleToggle} className='text-gray-700 hidden lg:block dark:text-slate-100'>
-      {theme == 'dark' ? <Moon size={20}/> : <Sun size={20}/>}
+      {theme == 'dark' ? <Moon size={18}/> : <Sun size={18}/>}
     </button>
   );
 }

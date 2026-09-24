@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className='pb-14 md:pb-0'>
       <div className="social-card mx-auto mb-8">
-        <span>CONTACT ME</span>
+        <span>SOCIALS</span>
         <a className="social-link" href="https://github.com/danangstdi" target='_blank'>
           <Github size={18} className='fill-black'/>
         </a>

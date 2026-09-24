@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function ProjectCard({ title, type, year, desc, url, image }) {
@@ -5,9 +6,10 @@ export default function ProjectCard({ title, type, year, desc, url, image }) {
     <div className="group flex h-full flex-col max-w-sm overflow-hidden rounded-sm text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
 
             <figure className="overflow-hidden rounded-xs">
-              <img
+              <Image
                 className="aspect-video w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 src={ image }
+                quality={50}
                 alt="Saytix.id"
               />
             </figure>

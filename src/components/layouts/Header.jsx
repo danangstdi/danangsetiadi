@@ -77,13 +77,13 @@ export default function Header() {
         <Link href=''>
           <Image src={Logo} loading='lazy' quality={50} alt='' className='h-9 w-9'/>
         </Link>
-        <button type='button' onClick={() => setNavOpen(!navOpen)} className='flex items-center gap-2 ml-5 bg-indigo-50 text-cyan-400 bg-opacity-70 text-xs px-3 py-1 rounded-full group hover:bg-indigo-100 lg:text-sm lg:px-5 dark:bg-slate-800 dark:bg-opacity-70'>
-            <svg fill="none" height="16" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none" stroke="none"/><rect height="6" rx="1" width="6" x="4" y="4"/><rect height="6" rx="1" width="6" x="14" y="4"/><rect height="6" rx="1" width="6" x="4" y="14"/><rect height="6" rx="1" width="6" x="14" y="14"/></svg>
+        <button type='button' onClick={() => setNavOpen(!navOpen)} className='flex items-center gap-2 ml-5 bg-indigo-50 text-cyan-400 bg-opacity-70 text-xs px-3 py-1 rounded-full group hover:bg-indigo-100 lg:px-5 dark:bg-slate-800 dark:bg-opacity-70'>
+            <svg fill="none" height="14" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none" stroke="none"/><rect height="6" rx="1" width="6" x="4" y="4"/><rect height="6" rx="1" width="6" x="14" y="4"/><rect height="6" rx="1" width="6" x="4" y="14"/><rect height="6" rx="1" width="6" x="14" y="14"/></svg>
             Quick Center
             <ChevronRight size={10} className="group-hover:ml-2 group-hover:duration-300"/>
         </button>
         <div className="ml-auto flex items-center gap-8">
-          <ul className='hidden md:flex md:items-center font-semibold md:gap-10 md:text-xs lg:text-sm dark:text-slate-100'>
+          <ul className='hidden md:flex md:items-center font-semibold md:gap-10 md:text-xs dark:text-slate-100'>
             <li>
               <Link href='/' className='hover:text-slate-600 dark:hover:text-slate-300 transition-colors'>
                 Home
@@ -105,12 +105,12 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-          <hr className='hidden lg:h-full lg:border lg:block'/>
+          <hr className='hidden lg:border-white/40 lg:h-5 lg:border lg:block'/>
           <button type='button' onClick={handleToast} className='text-gray-700 dark:text-slate-100'>
-            <Search size={18}/>
+            <Search size={16}/>
           </button>
           <ThemeTogglerHeader/>
-          <a href='https://github.com/danangstdi' target='_blank' className='hidden py-3 px-5 text-white bg-gradient-to-r from-slate-600 to-slate-800 rounded-full text-xs group lg:text-sm lg:flex lg:items-center lg:gap-2 dark:text-slate-100'>
+          <a href='https://github.com/danangstdi' target='_blank' className='hidden py-3 px-5 text-white bg-gradient-to-r from-slate-600 to-slate-800 rounded-full text-xs group lg:flex lg:items-center lg:gap-2 dark:text-slate-100'>
               <Github size={16}/>
               Github
               <ArrowRight size={16} className='opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 group-hover:duration-300 group-hover:ease-in-out'/>

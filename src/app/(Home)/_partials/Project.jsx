@@ -1,4 +1,9 @@
 import ProjectCard from "@/components/partials/card/ProjectCard";
+import a from "@/../public/img/project/saytix.webp"
+import b from "@/../public/img/project/sispres.webp"
+import c from "@/../public/img/project/jantisigap.webp"
+import d from "@/../public/img/project/find.webp"
+import e from "@/../public/img/project/emptychair.webp"
 
 export default function Project() {
   const Projects = [
@@ -8,7 +13,7 @@ export default function Project() {
       year: "2024",
       desc: "Ticketing Platform for Event Organizers in Indonesia.",
       url: "https://saytix.id/",
-      image: "https://image.idntimes.com/post/20260323/upload_ccb3079db8cdafeb1ff9a6ece9c83a29_e576193d-31f4-45e1-b7d4-08d93ad6001a.jpg"
+      image: a
     },
     {
       title: "Sispres",
@@ -16,7 +21,7 @@ export default function Project() {
       year: "2025",
       desc: "Attendance Management System for Universitas Darul Ulum.",
       url: "https://sispres-dashboard.vercel.app/unduh",
-      image: "https://image.idntimes.com/post/20260323/upload_ccb3079db8cdafeb1ff9a6ece9c83a29_e576193d-31f4-45e1-b7d4-08d93ad6001a.jpg"
+      image: b
     },
     {
       title: "JantiSigap",
@@ -24,7 +29,7 @@ export default function Project() {
       year: "2025",
       desc: "Official digital public complaint service website for Janti village.",
       url: "https://jantisigap.vercel.app/",
-      image: "https://image.idntimes.com/post/20260323/upload_ccb3079db8cdafeb1ff9a6ece9c83a29_e576193d-31f4-45e1-b7d4-08d93ad6001a.jpg"
+      image: c
     },
     {
       title: "FIND",
@@ -32,7 +37,7 @@ export default function Project() {
       year: "2026",
       desc: "Psychological Horror Game.",
       url: "https://setiadisoftworks.itch.io/find",
-      image: "https://image.idntimes.com/post/20260323/upload_ccb3079db8cdafeb1ff9a6ece9c83a29_e576193d-31f4-45e1-b7d4-08d93ad6001a.jpg"
+      image: d
     },
     {
       title: "Empty Chair",
@@ -40,7 +45,7 @@ export default function Project() {
       year: "2023",
       desc: "Psychological Horror Game.",
       url: "https://rivegames.itch.io/empty-chair",
-      image: "https://image.idntimes.com/post/20260323/upload_ccb3079db8cdafeb1ff9a6ece9c83a29_e576193d-31f4-45e1-b7d4-08d93ad6001a.jpg"
+      image: e
     },
   ]
   return (
