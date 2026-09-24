@@ -41,7 +41,7 @@ export default function Certificate() {
       <div id='popup-open' className={`${!popupOpen && 'hidden'}`}>
         <div className='fixed z-40 overflow-y-scroll inset-0 bg-slate-300 bg-opacity-40 backdrop-blur-sm p-6 dark:bg-slate-800 dark:bg-opacity-40'>
           <section className='flex justify-end text-gray-700'>
-            <button type='button' onClick={() => setPopupOpen(!popupOpen)} className='nav-list-item-1 bg-slate-100 bg-opacity-50 backdrop-blur-sm h-fit p-1 ml-auto rounded-md hover:bg-slate-300 dark:bg-slate-600 dark:bg-opacity-50 dark:hover:bg-slate-500'>
+            <button type='button' onClick={() => setPopupOpen(!popupOpen)} className='nav-list-item-1 bg-slate-100 bg-opacity-50 backdrop-blur-sm h-fit p-3 shadow-md ml-auto rounded-md hover:bg-slate-300 dark:bg-slate-600 dark:bg-opacity-50 dark:hover:bg-slate-500'>
               <X size={25} className='text-gray-700 dark:text-slate-100'/>
             </button>
           </section>

@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className='pb-14 md:pb-0'>
       <div className="social-card mx-auto mb-8">
-        <span>Contact Me</span>
+        <span>CONTACT ME</span>
         <a className="social-link" href="https://github.com/danangstdi" target='_blank'>
           <Github size={18} className='fill-black'/>
         </a>
@@ -21,7 +21,14 @@ export default function Footer() {
           <Linkedin size={18} className='fill-black'/>
         </a>
       </div>
-      <p className='text-sm text-gray-500 text-center font-semibold py-4 md:text-sm dark:text-slate-300'>© {currentYear} Danang. All rights reserved.</p>
+      <div className='flex items-center justify-center lg:justify-between lg:my-20 lg:mx-20 xl:mx-36'>
+        <h2 className='hidden lg:block text-4xl poppins-black text-neutral-950 dark:text-white lg:text-8xl xl:text-9xl'>
+          THANKS FOR COMING!
+        </h2>
+        <p className='text-sm text-nowrap text-gray-500 text-center font-semibold py-4 md:text-sm dark:text-slate-300'>
+          © {currentYear} Danang. All rights reserved.
+        </p>
+      </div>
     </footer>
   )
 }

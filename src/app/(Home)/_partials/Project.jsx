@@ -44,8 +44,8 @@ export default function Project() {
     },
   ]
   return (
-    <section id="project" className="mt-24 lg:mt-32">
-      <div className="text-center">
+    <section id="project" className="bg-white dark:bg-neutral-950">
+      <div className="text-center py-14">
         <h1 className="text-3xl poppins-bold text-gray-800 dark:text-slate-100">Our Project</h1>
         <p className="line-height-2 px-3 text-xs text-gray-600 mt-2 lg:px-40 lg:text-base dark:text-slate-300">
           Our best project already done.

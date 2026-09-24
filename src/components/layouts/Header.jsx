@@ -22,7 +22,7 @@ export default function Header() {
   const handleToast = () => {
       return Swal.fire({
         title: "",
-        text: "Mohon maaf, fitr ini masih dalam tahap pengembangan",
+        text: "Mohon maaf, fitur ini masih dalam tahap pengembangan",
         icon: "warning"
       });
   }
@@ -83,24 +83,24 @@ export default function Header() {
             <ChevronRight size={10} className="group-hover:ml-2 group-hover:duration-300"/>
         </button>
         <div className="ml-auto flex items-center gap-8">
-          <ul className='hidden md:flex md:items-center md:gap-10 md:text-xs lg:text-sm dark:text-slate-100'>
+          <ul className='hidden md:flex md:items-center font-semibold md:gap-10 md:text-xs lg:text-sm dark:text-slate-100'>
             <li>
-              <Link href='/' className='hover:text-cyan-400'>
+              <Link href='/' className='hover:text-slate-600 dark:hover:text-slate-300 transition-colors'>
                 Home
               </Link>
             </li>
             <li>
-              <Link href='' className='hover:text-cyan-400'>
+              <Link href='' className='hover:text-slate-600 dark:hover:text-slate-300 transition-colors'>
                 Project
               </Link>
             </li>
             <li>
-              <Link href='/blog' className='hover:text-cyan-400'>
+              <Link href='/blog' className='hover:text-slate-600 dark:hover:text-slate-300 transition-colors'>
                 Blog
               </Link>
             </li>
             <li>
-              <Link href='' className='hover:text-cyan-400'>
+              <Link href='' className='hover:text-slate-600 dark:hover:text-slate-300 transition-colors'>
                 Forum
               </Link>
             </li>
@@ -119,13 +119,13 @@ export default function Header() {
       </nav>
 
       <div id='navbar-open' className='hidden'>
-        <div className='fixed z-40 overflow-y-scroll inset-0 bg-slate-300 bg-opacity-40 backdrop-blur-sm p-6 dark:bg-slate-800 dark:bg-opacity-40'>
+        <div className='fixed z-40 overflow-y-scroll inset-0 bg-slate-300 bg-opacity-40 backdrop-blur-sm p-6 lg:p-14 dark:bg-slate-800 dark:bg-opacity-40'>
           <section className='flex justify-between text-gray-700 dark:text-slate-100'>
             <div className='flex flex-col items-center nav-list-item-1'>
               <p className='text-3xl lg:text-5xl'>{time}</p>
               <p className='text-xs lg:text-lg'>{day}</p>
             </div>
-            <button type='button' onClick={() => setNavOpen(!navOpen)} className='nav-list-item-1 bg-slate-100 bg-opacity-50 backdrop-blur-sm h-fit p-1 ml-auto rounded-md hover:bg-slate-300 dark:bg-slate-600 dark:bg-opacity-50 dark:hover:bg-slate-500'>
+            <button type='button' onClick={() => setNavOpen(!navOpen)} className='nav-list-item-1 bg-slate-100 shadow-md bg-opacity-50 backdrop-blur-sm h-fit p-3 ml-auto rounded-md hover:bg-slate-300 dark:bg-slate-600 dark:bg-opacity-50 dark:hover:bg-slate-500'>
               <X size={25} className='text-gray-700 dark:text-slate-100'/>
             </button>
           </section>
