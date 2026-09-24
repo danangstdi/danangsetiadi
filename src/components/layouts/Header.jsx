@@ -59,13 +59,13 @@ export default function Header() {
     return () => clearInterval(timer);
   }, []);
 
-  const time = date.toLocaleTimeString('id-ID', {
+  const time = date.toLocaleTimeString('en-US', {
     hour: '2-digit',
     minute: '2-digit',
     hour12: false,
   }).replace(':', '.');
 
-  const day = date.toLocaleDateString('id-ID', {
+  const day = date.toLocaleDateString('en-US', {
     weekday: 'short',
     day: '2-digit',
     month: 'short',

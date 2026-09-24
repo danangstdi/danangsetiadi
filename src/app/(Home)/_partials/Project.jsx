@@ -50,7 +50,7 @@ export default function Project() {
         <p className="line-height-2 px-3 text-xs text-gray-600 mt-2 lg:px-40 lg:text-base dark:text-slate-300">
           Our best project already done.
         </p>
-        <div className="bg-transparent p-4 grid gap-3 items-center my-10 grid-cols-2 md:gap-6 lg:mx-24 xl:mx-72 xl:grid-cols-3">
+        <div className="bg-transparent p-4 grid gap-3 items-center my-10 grid-cols-1 md:grid-cols-2 md:gap-6 lg:mx-24 xl:mx-72 xl:grid-cols-3">
           {Projects.map((item) => (
             <ProjectCard 
                 key={item.title}
