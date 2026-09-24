@@ -19,7 +19,7 @@ export default function Home() {
         <Tools/>
         <Services/>
         <DinoGame/>
-        <WebDevelopment/>
+        {/* <WebDevelopment/> */}
         {/* <GameDevelopment/> */}
         <Project/>
         <Certificate/>
