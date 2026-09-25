@@ -23,7 +23,7 @@ export default function Footer() {
       </div>
       <div className='flex items-center justify-center lg:justify-between lg:my-20 lg:mx-20 xl:mx-36'>
         <h2 className='hidden lg:block text-4xl poppins-black text-neutral-950 dark:text-white lg:text-8xl xl:text-9xl'>
-          THANKS FOR COMING!😉
+          THANKS FOR VISITING!😉
         </h2>
         <p className='text-sm text-nowrap text-gray-500 text-center font-semibold py-4 md:text-sm dark:text-slate-300'>
           © {currentYear} Danang. All rights reserved.

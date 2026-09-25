@@ -51,9 +51,9 @@ export default function Project() {
   return (
     <section id="project" className="bg-white dark:bg-neutral-950">
       <div className="text-center py-14">
-        <h1 className="text-3xl poppins-bold text-gray-800 dark:text-slate-100">Our Project</h1>
+        <h1 className="text-3xl poppins-bold text-gray-800 dark:text-slate-100">My Projects</h1>
         <p className="line-height-2 px-3 text-xs text-gray-600 mt-2 lg:px-40 lg:text-base dark:text-slate-300">
-          Our best project already done.
+          A collection of <strong>projects I’ve worked on</strong>, from development to creative design.
         </p>
         <div className="bg-transparent p-4 grid gap-3 items-center my-10 grid-cols-1 md:grid-cols-2 md:gap-6 lg:mx-24 xl:mx-72 xl:grid-cols-3">
           {Projects.map((item) => (
