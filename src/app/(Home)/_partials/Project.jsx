@@ -10,7 +10,7 @@ export default function Project() {
     {
       title: "Saytix.id",
       type: "Website",
-      year: "2024",
+      year: "2025",
       desc: "Ticketing Platform for Event Organizers in Indonesia.",
       url: "https://saytix.id/",
       image: a
@@ -18,7 +18,7 @@ export default function Project() {
     {
       title: "Sispres",
       type: "Mobile Apps & Web",
-      year: "2025",
+      year: "2026",
       desc: "Attendance Management System for Universitas Darul Ulum.",
       url: "https://sispres-dashboard.vercel.app/unduh",
       image: b
@@ -26,7 +26,7 @@ export default function Project() {
     {
       title: "JantiSigap",
       type: "Website",
-      year: "2025",
+      year: "2026",
       desc: "Official digital public complaint service website for Janti village.",
       url: "https://jantisigap.vercel.app/",
       image: c
