@@ -10,10 +10,10 @@ export default function Hero() {
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
     if (isMobile) {
-      window.location.href = "mailto:danangsetiadi2003@gmail.com";
+      window.location.href = "mailto:danangstd17@gmail.com";
     } else {
       window.open(
-        "https://mail.google.com/mail/?view=cm&fs=1&to=danangsetiadi2003@gmail.com",
+        "https://mail.google.com/mail/?view=cm&fs=1&to=danangstd17@gmail.com",
         "_blank"
       );
     }

@@ -14,7 +14,7 @@ export default function Footer() {
         <a className="social-link" href="https://www.instagram.com/danangstd_/" target='_blank'>
           <Instagram size={18} className='fill-black'/>
         </a>
-        <a className="social-link" href="mailto:danangsetiadi2003@gmail.com" target='_blank'>
+        <a className="social-link" href="mailto:danangstd17@gmail.com" target='_blank'>
           <Google size={18} className='fill-black'/>
         </a>
         <a className="social-link" href="https://www.linkedin.com/in/danang-setiadi-75a176262/" target='_blank'>
